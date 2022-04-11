@@ -1,29 +1,52 @@
-const contact = './Sobre';
-const Home = '/';
+import React from 'react';
+import Sobre from './Sobre';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem } from 'reactstrap';
 
-function Navbar (){
-  return(
-    <nav class="navbar navbar-expand-lg navbar-dark bg-purple shadow">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href={Home}>Home</a>
-        </li>
-        <span class="glyphicons glyphicons-home"></span>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/rodlessa">Github</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href={contact}>Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-  )
+export default class Barnav extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+  render() {
+    return (
+      <div>
+        <Navbar className='shadow' dark expand="md">
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink href="/">Home</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="https://github.com/rodlessa">GitHub</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/sobre"> Sobre</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
+    );
+  }
 }
-export default Navbar;

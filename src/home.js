@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './Navbar';
+import Barnav from './Navbar';
 import './index.css';
 import Portfolio from './portfolio';
 import Footer from './footer';
@@ -14,7 +14,7 @@ const Home = () =>{
         // Initial render
         root.render(
         <React.StrictMode>
-        <Navbar />
+        <Barnav />
         <App2/>
         <Portfolio />
         <Footer />
