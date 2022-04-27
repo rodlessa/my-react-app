@@ -1,7 +1,22 @@
+import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
+
+
 function Portfolio(){
   return (
     <div class="container bg-portfolio rounded-3">
+       <div className="m-2 p-5 text-black bg-branco rounded-3 shadow ">
+        <p><h1>NG+ Roleplay Classes Database</h1></p>
+          <p><h3>Ferramenta criada com React, MongoDB Atalas e hospedado com AWS</h3></p>
+          <p> Ferramenta colaborativa para roleplay de classes do jogo Elden Ring</p>
+          <Box textAlign='center'>
+          <Button variant="contained"><a href="http://ngpclasses.rodlessa.tech/" class="link-light">Acessar</a></Button>   
+          </Box>
+        </div>
       <div className="row align-items-md-stretch">
+     
+
+      <div className="m-2"></div>
       <div className="col-md-6">
         <div className="m-1 p-5 text-white bg-preto rounded-3 shadow">
           <p>React.</p>
@@ -26,7 +41,7 @@ function Portfolio(){
           <p>Framework mais popular voltado para front-end</p>
         </div>
         </div>
-      </div>
+        </div>
     </div>
   )
 }

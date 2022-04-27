@@ -1,17 +1,13 @@
 import React from 'react';
-import Sobre from './Sobre';
+
 import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+} from 'reactstrap';
 
 export default class Barnav extends React.Component {
   constructor(props) {
