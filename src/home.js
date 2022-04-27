@@ -1,14 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Barnav from './Navbar';
 import './index.css';
 import Portfolio from './portfolio';
 import Footer from './footer';
 import App2 from './app2';
-const container = document.getElementById('root');
 
-const root = ReactDOM.createRoot(container);
+const root = ReactDOM.createRoot(document.getElementById('root'));
 const Home = () =>{
     return (
         // Initial render
