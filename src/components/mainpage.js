@@ -18,7 +18,7 @@ export const MainPage = () =>{
          <div className="col p-5 rounded bg-alt">
            Desenvolvedor Front-End
            <p className="">Formado em Jogos Digitais, apaixonado por desenvolvimento Web e tecnologia.</p>
-           <p>Utilizando as tecnologias mais atuais para seu negocio, HTML5, SASS, JavaScript, React.</p>
+           <p>Utilizando as tecnologias mais atuais para seu negocio, HTML5, SASS, JavaScript, React, Bootstrap, TailWindCSS.</p>
          </div>
        </div>
        </div>
