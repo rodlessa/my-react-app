@@ -1,0 +1,10 @@
+const styles = {
+    bounce: {
+      animation: 'x 1s',
+      animationName: Radium.keyframes(bounce, 'bounce')
+    },
+    fadeInLeft:{
+        animation: 'x 1s',
+        animationName: Radium.keyframes(fadeInLeft,'fadeInLeft')
+    }
+  }

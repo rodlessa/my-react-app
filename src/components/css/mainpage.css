@@ -1,0 +1,48 @@
+.spacer{
+    min-height: 20vh;
+}
+body{
+    background-color: #242424;
+    color: aliceblue;
+}
+.header{
+    height: 100vh;
+    padding-top: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+.cont-1{
+    background-color: #a17dc7;
+    color: aliceblue;
+    height: 102vh;
+}
+.cont-2{
+    background-color:cornsilk;
+    color: #242424;
+    height: 102vh;
+}
+.cont-3{
+    background-color: cadetblue;
+    height: 102vh;
+}
+.portfolio{
+    height: 102vh;
+    
+}
+.bg-alt{
+    background-color: #6b4a8f;
+}
+.content-center{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+.center-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
